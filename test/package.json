@@ -1,0 +1,37 @@
+{
+	"name": "concurrent-processor",
+	"version": "1.0.0",
+	"description": "Concurrent Processor",
+	"author": {
+		"name": "Oliver Plummer",
+		"email": "oliver.plummer@outlook.com",
+		"url": "https://oliverplummer.com.au/"
+	},
+	"license": "MIT",
+	"private": true,
+	"type": "module",
+	"bugs": {
+		"url": "https://github.com/olyop/concurrent-processor/issues",
+		"email": "oliver.plummer@outlook.com"
+	},
+	"volta": {
+		"node": "21.6.2",
+		"npm": "10.4.0"
+	},
+	"engines": {
+		"node": "21.6.2",
+		"npm": "10.4.0"
+	},
+	"devDependencies": {
+		"@oly_op/eslint-config-react": "4.3.6",
+		"@types/node": "20.12.2",
+		"@types/react": "18.2.73",
+		"@types/react-dom": "18.2.23",
+		"vite": "5.2.7",
+		"vite-plugin-checker": "0.6.4"
+	},
+	"dependencies": {
+		"react": "18.2.0",
+		"react-dom": "18.2.0"
+	}
+}

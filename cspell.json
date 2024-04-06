@@ -1,0 +1,11 @@
+{
+	"import": ["@oly_op/cspell-dict/cspell-ext.json"],
+	"ignorePaths": ["./cspell-dictionary.txt"],
+	"dictionaryDefinitions": [
+		{
+			"name": "concurrent-processor",
+			"path": "./cspell-dictionary.txt"
+		}
+	],
+	"dictionaries": ["concurrent-processor"]
+}

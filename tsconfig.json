@@ -1,0 +1,4 @@
+{
+	"extends": "@oly_op/tsconfig",
+	"include": ["index.ts"]
+}

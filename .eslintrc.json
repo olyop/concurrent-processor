@@ -1,0 +1,9 @@
+{
+	"extends": ["@oly_op/eslint-config"],
+	"rules": {
+		"unicorn/consistent-function-scoping": "off"
+	},
+	"parserOptions": {
+		"project": "./tsconfig.eslint.json"
+	}
+}

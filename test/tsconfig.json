@@ -1,0 +1,15 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"lib": ["ESNext", "DOM", "WebWorker"],
+		"skipLibCheck": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react",
+		"jsxFactory": "createElement",
+		"types": ["vite/client"]
+	},
+	"include": ["src"]
+}

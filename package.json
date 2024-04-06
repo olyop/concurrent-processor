@@ -1,0 +1,42 @@
+{
+	"name": "concurrent-processor",
+	"version": "1.0.1",
+	"description": "Concurrent Processor",
+	"author": {
+		"name": "Oliver Plummer",
+		"email": "oliver.plummer@outlook.com",
+		"url": "https://oliverplummer.com.au/"
+	},
+	"license": "MIT",
+	"private": false,
+	"type": "module",
+	"main": "index.js",
+	"bugs": {
+		"url": "https://github.com/olyop/concurrent-processor/issues",
+		"email": "oliver.plummer@outlook.com"
+	},
+	"files": [
+		"index.js"
+	],
+	"volta": {
+		"node": "21.6.2",
+		"npm": "10.4.0"
+	},
+	"engines": {
+		"node": "21.6.2",
+		"npm": "10.4.0"
+	},
+	"scripts": {
+		"prepublishOnly": "tsc",
+		"postpublish": "git add -A && git commit -m 'Publish' && git push"
+	},
+	"devDependencies": {
+		"@oly_op/cspell-dict": "1.1.10",
+		"@oly_op/eslint-config": "6.7.20",
+		"@oly_op/prettier-config": "1.8.2",
+		"@oly_op/tsconfig": "1.2.1",
+		"@types/node": "20.12.2",
+		"concurrently": "8.2.2",
+		"npm-check-updates": "16.14.18"
+	}
+}
