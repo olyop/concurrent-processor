@@ -1,6 +1,6 @@
 {
 	"name": "concurrent-processor",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Concurrent Processor",
 	"author": {
 		"name": "Oliver Plummer",
@@ -16,8 +16,13 @@
 		"email": "oliver.plummer@outlook.com"
 	},
 	"files": [
-		"index.js"
+		"index.js",
+		"index.d.ts"
 	],
+	"exports": {
+		"types": "./index.d.ts",
+		"default": "./index.js"
+	},
 	"volta": {
 		"node": "21.6.2",
 		"npm": "10.4.0"

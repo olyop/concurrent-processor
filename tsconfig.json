@@ -1,4 +1,7 @@
 {
 	"extends": "@oly_op/tsconfig",
+	"compilerOptions": {
+		"declaration": true
+	},
 	"include": ["index.ts"]
 }
