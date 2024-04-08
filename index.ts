@@ -22,6 +22,9 @@ export async function concurrentProcessor<T, V, R = T>(options: ConcurrentProces
 				pool.push(worker);
 			}
 
+			// initialize abort signal
+			options.signal?.addEventListener("abort", onSignalAbort(reject));
+
 			// Start processing first batch of work
 			void batchProcessor<T, V, R>(pool, options, reject, resolve);
 		});
@@ -54,6 +57,12 @@ function onWorkerMessage<T, V, R>(
 		// Since a worker has just completed processing
 		// a value, we can start processing another batch
 		void batchProcessor<T, V, R>(pool, options, onError, onComplete);
+	};
+}
+
+function onSignalAbort(onError: (error: Error) => void) {
+	return () => {
+		onError(new Error("Aborted"));
 	};
 }
 
